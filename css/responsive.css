@@ -1,0 +1,492 @@
+@charset "UTF-8";
+/* Einfache fließende Medien
+   Hinweis: Für fließende Medien müssen Sie die Attribute 'height' und 'width' des Medium aus dem HTML-Code entfernen
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 unterstützt keine maximale Breite, verwenden Sie daher eine Standardbreite von 100% */
+.ie6 img {
+	width:100%;
+}
+/*
+	Dreamweaver-Eigenschaften für fließende Raster
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Idee durch den Artikel "Responsive Web Design" von Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	und "Golden Grid System" von Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Desktoplayout: 769 bis maximal 1232 px.  Erbt Stile von: den Layouts für Mobilgeräte und Tablet-PCs. */
+@media only screen and (min-width: 768px) and (max-width: 949px) {
+	#wrapper {
+		min-width: 768px;
+		height:auto;
+	}
+	iframe {
+		width:100%;
+		height:auto;
+	}
+	header {
+		background:#FFFFFF;
+		width:	100%;
+		height:	auto;
+	}
+	header div.header-inner {
+		width: 728px;
+		margin: 0 auto;
+		padding:0 0.9% 0 0.9%;
+	}
+	/* Navigation */
+	header .header-inner nav ul {
+		width:728px;
+	}
+	header .header-inner nav ul li a {
+		width: 100px;
+		padding: 10px 0.64em 6px 0.64em;
+	}
+	header .header-inner nav ul li a:hover, header .header-inner nav ul li.active a {
+		width: 100px;
+		padding: 10px 0.64em 6px 0.64em;
+	}
+	/* Content */
+	section article {
+		width: 728px;
+		height: 100%;
+		min-height: 100%;
+		padding: 0;
+		margin: 100px auto 0 auto;
+	}
+	section article .block {
+		margin:0 auto 70px 0;
+		width:728px;
+		float:none;
+		clear:left;
+	}
+	section article .block.last {
+		margin: 0 0 70px 0;
+	}
+	section article .block img {
+		width:	100%;
+		height: auto;
+	}
+	section article .block_fullwidth {
+		width: 728px;
+		margin: 0 0 70px 0;
+	}
+	section article .block_fullwidth {
+		width: 728px;
+		margin: 0 0 70px 0;
+	}
+	section article .block_fullwidth .tab_content, section article .block_fullwidth .tab_content .left, section article .block_fullwidth .tab_content .right {
+		width: 688px;
+		height:	auto;
+	}
+	section article .block_fullwidth .tab_content .left img {
+		width: 100%;
+		padding: 0 0 20px 0;
+		height: auto;
+	}
+	section article .block_headline {
+		width:718px;
+	}
+	section article .block_fullwidth.content {
+		width:688px;
+		height: auto;
+		margin: 0 0 70px 0;
+	}
+	section article .block_fullwidth.content .left {
+		width:100%;
+		height:	auto;
+		padding:0 0 20px 0;
+	}
+	section article .block_fullwidth.content .right {
+		width:100%;
+		height:	auto;
+	}
+	section article .block_fullwidth .right #slideshow {
+		width: 100%;
+		height:474px;
+	}
+	section article .block_fullwidth .right #slideshow img {
+		width: 100%;
+		height: auto;
+	}
+	section article .block_fullwidth.content .gallery_line {
+		padding: 0 20px 20px 0;
+		width:216px;
+		float:left;
+		height: auto;
+		margin: 0 auto;
+	}
+	section article .block_fullwidth.content .gallery_line:last-child {
+		padding: 0 0 0 0;
+	}
+	section article .block_fullwidth.content .gallery_line img {
+		padding: 0 20px 20px 0;
+		width:100%;
+		height:auto;
+	}
+	input[type="text"] {
+		width: 670px !important;
+	}
+	textarea[name="message"] {
+		width: 670px !important;
+	}
+	section article .block_fullwidth.contact .right form fieldset button[type="submit"] {
+		margin:20px -20px -20px 0;
+	}
+	/* Footer */
+	footer nav {
+		width:728px;
+	}
+	footer nav ul {
+		width:728px;
+	}
+	footer nav ul li:first-child {
+		font-weight:normal;
+		float:left;
+		color:#FFFFFF;
+		text-align: center;
+		display: inline-block;
+		width: 140px;
+	}
+	footer nav ul li {
+		font-weight:normal;
+		font-size:12px;
+		float:left;
+		color:#FFFFFF;
+		text-align: center;
+		display: inline-block;
+		width: 195px;
+	}
+}
+/* Layout für Tablet-PCs: 480 bis 767 px. Erbt Stile vom: Layout für Mobilgeräte. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#wrapper {
+		min-width: 480px;
+		height:auto;
+	}
+	iframe {
+		width:100%;
+		height:auto;
+	}
+	header {
+		background:#FFFFFF;
+		width:	100%;
+		height:	auto;
+	}
+	header div.header-inner {
+		width: 460px;
+		height:auto;
+		margin: 0 auto;
+		padding:0 0.9% 0 0.9%;
+	}
+	/* Navigation */
+	header .header-inner nav {
+		width:460px;
+		height:auto;
+	}
+	header .header-inner nav ul {
+		width:460px;
+		height:auto;
+	}
+	header .header-inner nav ul li {
+		display:block;
+		height:auto;
+		float:none;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	header .header-inner nav ul li a {
+		width: 100%;
+		display:block;
+		padding: 5px 0 5px 0;
+		margin:0;
+	}
+	header .header-inner nav ul li a:hover, header .header-inner nav ul li.active a {
+		width: 100%;
+		padding: 5px 0 5px 0;
+		margin:0;
+	}
+	/* Content */
+	section article {
+		width: 460px;
+		height: 100%;
+		min-height: 100%;
+		padding: 0;
+		margin: 100px auto 0 auto;
+	}
+	section article .block {
+		margin:0 auto 25px 0;
+		width:460px;
+		float:none;
+		clear:left;
+	}
+	section article .block.last {
+		margin: 0 0 140px 0;
+	}
+	section article .block img {
+		width:	100%;
+		height: auto;
+	}
+	section article .block_fullwidth {
+		width: 460px;
+		margin: 0 0 140px 0;
+	}
+	section article .block_fullwidth .tab_content, section article .block_fullwidth .tab_content .left, section article .block_fullwidth .tab_content .right {
+		width: 420px;
+		height:	auto;
+	}
+	section article .block_fullwidth .tab_content .left img {
+		width: 100%;
+		padding: 0 0 20px 0;
+		height: auto;
+	}
+	section article .block_fullwidth .tab_content .right p {
+		padding:10px 20px 10px 0; 
+	}
+	section article .block_headline {
+		width:450px;
+	}
+	section article .block_fullwidth.content {
+		width:420px;
+		height: auto;
+		margin: 0 0 140px 0;
+	}
+	section article .block_fullwidth.content .left {
+		width:100%;
+		height:	auto;
+		padding:0 0 20px 0;
+	}
+	section article .block_fullwidth.content .right {
+		width:100%;
+		height:	auto;
+	}
+	section article .block_fullwidth .right #slideshow {
+		width: 100%;
+		height:297px;
+	}
+	section article .block_fullwidth .right #slideshow img {
+		width: 100%;
+		height: auto;
+	}
+	section article .block_fullwidth.content .gallery_line {
+		padding: 0 0 20px 0;
+		width:420px;
+		float:left;
+		height: auto;
+		margin: 0 auto;
+	}
+	section article .block_fullwidth.content .gallery_line:last-child {
+		padding: 0 0 20px 0;
+	}
+	section article .block_fullwidth.content .gallery_line img {
+		padding: 0 20px 20px 0;
+		width:100%;
+		height:auto;
+	}
+	input[type="text"] {
+		width: 410px !important;
+	}
+	textarea[name="message"] {
+		width: 420px !important;
+	}
+	section article .block_fullwidth.contact .right form fieldset button[type="submit"] {
+		margin:20px -14px -20px 0;
+	}
+	/* Footer */
+	footer {
+		height:auto;
+	}
+	footer nav {
+		width:460px;
+		height:auto;
+	}
+	footer nav ul {
+		width:460px;
+		padding:5px 0 0 0;
+		height:auto;
+	}
+	footer nav ul li:first-child {
+		float:none;
+		width:100%;
+	}
+	footer nav ul li {
+		float:none;
+		width:100%;
+		padding:5px 0 5px 0;
+	}
+}
+/* Layout für Mobilgeräte: 479px oder weniger. */
+@media only screen and (max-width:479px) {
+	#wrapper {
+		min-width: 320px;
+		height:auto;
+	}
+	iframe {
+		width:100%;
+		height:auto;
+	}
+	header {
+		background:#FFFFFF;
+		width:	100%;
+		height:	auto;
+	}
+	header div.header-inner {
+		width: 320px;
+		height:auto;
+		margin: 0 auto;
+		padding:0;
+	}
+	header .header-inner .header-logo {
+		width:300px;
+		margin:0 auto 20px auto;
+	}
+	/* Navigation */
+	header .header-inner nav {
+		width:300px;
+		height:auto;
+		margin:0 auto;
+	}
+	header .header-inner nav ul {
+		width:300px;
+		height:auto;
+	}
+	header .header-inner nav ul li {
+		display:block;
+		height:auto;
+		float:none;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	header .header-inner nav ul li a {
+		width: 100%;
+		display:block;
+		padding: 5px 0 5px 0;
+		margin:0;
+	}
+	header .header-inner nav ul li a:hover, header .header-inner nav ul li.active a {
+		width: 100%;
+		padding: 5px 0 5px 0;
+		margin:0;
+	}
+	/* Content */
+	section article {
+		width: 300px;
+		height: 100%;
+		min-height: 100%;
+		padding: 0;
+		margin: 100px auto 0 auto;
+	}
+	section article .block {
+		margin:0 auto 25px 0;
+		width:300px;
+		float:none;
+		clear:left;
+	}
+	section article .block.last {
+		margin: 0 0 140px 0;
+	}
+	section article .block img {
+		width:	100%;
+		height: auto;
+	}
+	section article .block_fullwidth {
+		width: 300px;
+		margin: 0 0 140px 0;
+	}
+	section article .block_fullwidth .tab_content, section article .block_fullwidth .tab_content .left, section article .block_fullwidth .tab_content .right {
+		width: 260px;
+		height:	auto;
+	}
+	section article .block_fullwidth .tab_content .left img {
+		width: 100%;
+		padding: 0 0 20px 0;
+		height: auto;
+	}
+	section article .block_fullwidth .tab_content .right p {
+		padding:10px 20px 10px 0; 
+	}
+	section article .block_headline {
+		width:290px;
+	}
+	section article .block_fullwidth.content {
+		width:260px;
+		height: auto;
+		margin: 0 0 140px 0;
+	}
+	section article .block_fullwidth.content .left {
+		width:100%;
+		height:	auto;
+		padding:0 0 20px 0;
+	}
+	section article .block_fullwidth.content .right {
+		width:100%;
+		height:	auto;
+	}
+	section article .block_fullwidth .right #slideshow {
+		width: 100%;
+		height:192px;
+	}
+	section article .block_fullwidth .right #slideshow img {
+		width: 100%;
+		height: auto;
+	}
+	section article .block_fullwidth.content .gallery_line {
+		padding: 0 0 20px 0;
+		width:260px;
+		float:left;
+		height: auto;
+		margin: 0 auto;
+	}
+	section article .block_fullwidth.content .gallery_line:last-child {
+		padding: 0 0 20px 0;
+	}
+	section article .block_fullwidth.content .gallery_line img {
+		padding: 0 20px 20px 0;
+		width:100%;
+		height:auto;
+	}
+	input[type="text"] {
+		width: 240px !important;
+	}
+	textarea[name="message"] {
+		width: 250px !important;
+	}
+	section article .block_fullwidth.contact .right form fieldset button[type="submit"] {
+		margin:20px -20px -20px 0;
+	}
+	/* Footer */
+	footer {
+		height:auto;
+	}
+	footer nav {
+		width:300px;
+		height:auto;
+	}
+	footer nav ul {
+		width:300px;
+		padding:5px 0 0 0;
+		height:auto;
+	}
+	footer nav ul li:first-child {
+		float:none;
+		width:100%;
+	}
+	footer nav ul li {
+		float:none;
+		width:100%;
+		padding:5px 0 5px 0;
+	}
+}

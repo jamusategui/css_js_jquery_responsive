@@ -1,0 +1,76 @@
+/* CSS Document */
+.bg_home {
+	background: url('../images/bg_home.jpg');
+	background-attachment:fixed;
+	background-repeat:repeat;
+  	background-position:top center;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.bg_rooms {
+	background: url('../images/bg_rooms.jpg');
+	background-attachment:fixed;
+	background-repeat:repeat;
+  	background-position:top center;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.bg_restaurant {
+	background: url('../images/bg_restaurant.jpg');
+	background-attachment:fixed;
+	background-repeat:repeat;
+  	background-position:top center;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+.bg_wellness {
+	background: url('../images/bg_wellness.jpg');
+	background-attachment:fixed;
+	background-repeat:repeat;
+  	background-position:top center;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+iframe {
+	border: none;
+	outline:none;
+}
+a {
+	outline:none;
+}
+header {
+	min-width: 950px;
+}
+header .header-inner {
+	min-width: 950px;
+}
+header .header-inner nav ul li a {
+	color:rgb(255,255,255);
+	font-family: 'Open Sans', sans-serif;
+	text-transform:uppercase;
+	line-height:120%;
+	font-size: 21px;
+	width:158px;
+	padding: 10px 1.39em 6px 1.39em;
+	font-weight: 600;
+}
+header .header-inner nav ul li a:hover, header .header-inner nav ul li.active a {
+	color:rgb(255,255,255);
+	width:158px;
+	background-color: rgb(77,153,227);
+	padding: 10px 1.39em 6px 1.39em;
+}
+section article .block {
+	background-color:rgb(255,255,255);
+}
+section article .block_fullwidth {
+	background-color:rgb(255,255,255);
+}
+section article .tabs li a {
+	background-color:rgb(66,150,232);
+	color:rgb(255,255,255);
+}
+section article .tabs li a.active {
+	color:rgb(66,150,232);
+	background-color:rgb(255,255,255);
+}
